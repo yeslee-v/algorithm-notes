@@ -1,5 +1,5 @@
 // 10952_A+B-5
-#define _CRT_SECURE_NO_WARNINGS
+/*#define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 int main(void) {
 	int A, B;
@@ -62,4 +62,4 @@ int main(void) {
 	}
 
 	return 0;
-}
+}*/

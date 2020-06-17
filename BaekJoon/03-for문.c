@@ -1,5 +1,5 @@
 // 2739_±¸±¸´Ü
-#define _CRT_SECURE_NO_WARNINGS
+/*#define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 int main(void) {
 	int N;
@@ -170,4 +170,4 @@ int main(void) {
 	}
 
 	return 0;
-}
+}*/

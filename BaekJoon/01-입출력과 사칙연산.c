@@ -1,5 +1,5 @@
 // 2557_Hello World
-#include <stdio.h>
+/*#include <stdio.h>
 int main(void) {
 	printf("Hello World!");
 
@@ -122,4 +122,4 @@ int main(void) {
 	printf("%d\n%d\n%d\n%d", c, d, e, c + (d * 10) + (e * 100));
 
 	return 0;
-}
+}*/
