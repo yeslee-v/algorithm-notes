@@ -27,5 +27,8 @@
     <ClCompile Include="04-while문.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="05-실습 1.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
