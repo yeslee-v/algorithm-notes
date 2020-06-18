@@ -34,19 +34,20 @@ for i in range(10):
 
 #3052_나머지
 
-ls = []; count = 0
+ls = []
 for i in range(10):
-    num = int(input())%42
+    num = int(input()) % 42
     ls.append(num)
-print(ls)
-for j in range(10):
-    for k in range(1, 10):
-        print(ls[j], ls[k])
+
+print(len(set(ls)))
+
+
+
+
+
+
+
+
+
         
 
-
-
-
-
-
-        
