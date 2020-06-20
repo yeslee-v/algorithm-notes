@@ -1,4 +1,4 @@
-#10818_최소, 최대
+# 10818_최소, 최대
 
 N = int(input())
 
@@ -7,7 +7,7 @@ ls.sort()
 print(ls[0], ls[-1])
 
 
-#2562_최댓값
+# 2562_최댓값
 
 ls = []
 for i in range(9):
@@ -15,7 +15,7 @@ for i in range(9):
 print(max(ls), ls.index(max(ls))+1)
 
 
-#2577_숫자의 개수
+# 2577_숫자의 개수
 
 ls = []; m_num = 1
 
@@ -32,7 +32,7 @@ for i in range(10):
     print(count)
 
 
-#3052_나머지
+# 3052_나머지
 
 ls = []
 for i in range(10):
@@ -42,7 +42,7 @@ for i in range(10):
 print(len(set(ls)))
 
 
-#1546_평균
+# 1546_평균
 
 test = []; new_test = []
 new_score = 0; count = 0
@@ -63,3 +63,51 @@ for k in new_test:
     sum += k
     
 print(round(sum/len(new_test), 6))
+
+
+# 8958_OX퀴즈
+
+N = int(input()); ls = []
+
+for i in range(N):
+    ls.append(input())
+
+for j in ls:
+    ls_element = list(j)
+    ls_count = []; count = 0
+    for k in range(len(ls_element)):
+        if ls_element[k] == 'O':
+           count += 1
+           ls_count.append(count)
+        else:
+           count = 0
+           ls_count.append(count)
+           
+    print(sum(ls_count))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
