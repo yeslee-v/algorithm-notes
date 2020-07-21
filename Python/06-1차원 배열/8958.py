@@ -1,4 +1,4 @@
-N = int(input());
+N = int(input())
 ls = []
 
 for i in range(N):
@@ -6,7 +6,7 @@ for i in range(N):
 
 for j in ls:
     ls_element = list(j)
-    ls_count = [];
+    ls_count = []
     count = 0
     for k in range(len(ls_element)):
         if ls_element[k] == 'O':

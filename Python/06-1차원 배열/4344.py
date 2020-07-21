@@ -3,7 +3,7 @@ C = int(input())
 for i in range(C):
     score = list(map(int, input().split()))
     avg = (sum(score) - score[0]) / (len(score) - 1)
-    count = 0;
+    count = 0
 
     for j in range(score[0]):
         if score[j + 1] > avg:

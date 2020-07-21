@@ -1,5 +1,3 @@
-# 10818_최소, 최대
-
 N = int(input())
 
 ls = list(map(int, input().split()))

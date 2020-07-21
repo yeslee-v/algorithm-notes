@@ -1,8 +1,8 @@
-test = [];
+test = []
 new_test = []
-new_score = 0;
+new_score = 0
 count = 0
-sum = 0;
+sum = 0
 avg = 0
 
 N = int(input())
