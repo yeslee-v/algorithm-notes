@@ -1,1 +1,1 @@
-# practice for coding test
+# 🧗 practice_algorithm
