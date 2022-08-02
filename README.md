@@ -1,1 +1,1 @@
-# 🧗 practice_algorithm
+# 🧗 practice_
