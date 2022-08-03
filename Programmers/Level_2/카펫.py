@@ -1,7 +1,9 @@
 import math
 
 def solution(brown, yellow):
-    w, h, answer = []
+    w = []
+    h = []
+    answer = []
     
     total = brown + yellow
 
