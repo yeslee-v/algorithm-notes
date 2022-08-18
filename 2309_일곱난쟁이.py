@@ -1,16 +1,17 @@
-def seven_dwarf(idx, cnt, weight, dwarf_arr, answer):
-    if idx >= len(answer): return
-    if weight == 100: return
-    seven_dwarf(idx, cnt, weight, dwarf_arr, answer)
-    answer.pop(dwarf_arr[idx])
-    seven_dwarf(idx + 1, cnt, weight + dwarf_arr[idx], dwarf_arr, answer.append(dwarf_arr[idx]))
-    
-dwarf_arr = []
-answer = []
-for i in range(9):
-    dwarf_arr.append(int(input()))
-dwarf_arr.sort()
+def solution():
+    a = []
+    for i in range(9):
+        a.append(int(input()))
+    res = sum(a)
 
-seven_dwarf(0, 0, 0, dwarf_arr, answer)
-for i in answer:
+    for i in range(len(a)):
+        for j in range(i + 1, len(a)):
+            if res - (a[i] + a[j]) == 100:
+                a.pop(j)
+                a.pop(i)
+                a.sort()
+                return a
+
+a = solution()
+for i in a:
     print(i)
