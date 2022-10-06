@@ -2,23 +2,22 @@ from collections import deque
 
 v = int(input())
 arr = [[] for _ in range(v + 1)]
-
-
-for _ in range(v):
-    data = list(map(int, input().split()))
-    idx = 0
-    S = data[idx]
-    idx += 1
-    while True:
-        if data[idx] == -1:
-            break
-        arr[S].append((data[idx], data[idx + 1]))
-        idx += 2
-
 distance = [0] * (v + 1)
+result = 1
 visited = [False] * (v + 1)
 
+for _ in range(v):
+    tmp = list(map(int, input().split()))
+    s = tmp[0] # arr의 index와 동일하다
+    j = 0
+    while tmp[j] != -1:
+        if j % 2 and tmp[j + 1] != -1:
+            arr[s].append((tmp[j], tmp[j + 1]))
+        j += 1
+
+
 def BFS(v):
+    global distance
     queue = deque()
     queue.append(v)
     visited[v] = True
@@ -31,15 +30,17 @@ def BFS(v):
                 distance[i[0]] = distance[now] + i[1]
 
 
-BFS(1)
-result = 1
+BFS(result)
+
 
 for i in range(2, v + 1):
-    if distance[result] < distance[i]:
-        result = i
+    result = i if distance[result] < distance[i] else result
 
+# 긴 거리에서 너비 우선 탐색을 하기 때문에 거리 리스트와 방문 리스트 초기화
 distance = [0] * (v + 1)
 visited = [False] * (v + 1)
+
+
+# update된 result로 탐색
 BFS(result)
-distance.sort()
-print(distance[v])
+print(max(distance))
