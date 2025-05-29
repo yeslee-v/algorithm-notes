@@ -1,3 +1,4 @@
+package level_1;
 class Solution {
   public int solution(int n) {
       int x = 0;
