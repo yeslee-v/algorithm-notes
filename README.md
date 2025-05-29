@@ -1,5 +1,11 @@
-# practice_
+# practice coding test
 
-## Java
+- 문제 풀고 간단한 로직 설명이나 접근 방법은 주석으로 메모한다.
 
-- 프로그래머스 기출문제 level 1 
+## Programmers
+
+- 기출문제 중심
+
+### Java
+
+- [level 1](./Programmers/Java/level_1/)
