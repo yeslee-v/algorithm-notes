@@ -3,28 +3,30 @@
  * data type을 신경쓰자(max int)
  */
 
-public int solution(int n) {
-    long tmp = 0, pow = 1;
-    int cnt = 0;
+class Solution {
+  public int solution(int n) {
+      long tmp = 0, pow = 1;
+      int cnt = 0;
 
-    int quot = n;
+      int quot = n;
 
-    while (0 < quot) {
-        tmp += (long) (quot % 3) * pow;
+      while (0 < quot) {
+          tmp += (long) (quot % 3) * pow;
 
-        quot /= 3;
-        pow *= 10;
-        cnt++;
-    }
+          quot /= 3;
+          pow *= 10;
+          cnt++;
+      }
 
-    int answer = 0;
-    while (0 < cnt) {
-        cnt--;
+      int answer = 0;
+      while (0 < cnt) {
+          cnt--;
 
-        answer += (tmp % 10) * Math.pow(3, cnt);
+          answer += (tmp % 10) * Math.pow(3, cnt);
 
-        tmp /= 10;
-    }
+          tmp /= 10;
+      }
 
-    return answer;
+      return answer;
+  }
 }
