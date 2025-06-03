@@ -1,5 +1,5 @@
 /*
- * Math 함수쓰면 간단하게 작성 가능할듯
+ * 배열의 길이가 2로 고정 + 값 크기 단순 비교 >> Math 함수 쓰면 간단하게 작성 가능할 듯
  */
 class Solution {
     public int solution(int[] wallet, int[] bill) {
