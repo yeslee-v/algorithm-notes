@@ -1,4 +1,4 @@
-# 1768 Merge Strings Alternately
+# 1768 문자열 교대로 합치기
 
 ## 🔗 문제 링크
 - [LeetCode 1768](https://leetcode.com/problems/merge-strings-alternately/)
@@ -17,40 +17,27 @@ Input: word1 = "ab", word2 = "pqrs"
 Output: "apbqrs"
 ```
 
+## �️ Java 구현
+📁 **전체 코드**: [1768_merge_strings_alternately.java](../code/1768_merge_strings_alternately.java)
+
+```java
+// 핵심 로직: StringBuilder로 문자열 교대 합치기
+public String mergeAlternately(String word1, String word2) {
+    StringBuilder sb = new StringBuilder();
+    int maxLen = Math.max(word1.length(), word2.length());
+    
+    for (int i = 0; i < maxLen; i++) {
+        if (i < word1.length()) sb.append(word1.charAt(i));
+        if (i < word2.length()) sb.append(word2.charAt(i));
+    }
+    
+    return sb.toString();
+}
+```
+
 ## 💡 알고리즘 패턴
 - **StringBuilder**: 문자열 조작 성능 최적화
 - **투포인터**: 두 문자열을 동시 순회
-
-## 🛠️ Java 구현
-
-```java
-import java.lang.StringBuilder;
-
-class Solution {
-    public String mergeAlternately(String word1, String word2) {
-        // String에 매번 직접 더하기 O(n^2)
-        // StringBuilder: O(n)
-        StringBuilder sb = new StringBuilder();
-        
-        int word1Len = word1.length();
-        int word2Len = word2.length();
-        int maxLen = Math.max(word1Len, word2Len);
-        
-        for (int i = 0; i < maxLen; i++) {
-            if (i < word1Len) {
-                sb.append(word1.charAt(i));
-            }
-            
-            if (i < word2Len) {
-                sb.append(word2.charAt(i));
-            }
-        }
-        
-        // StringBuilder -> String
-        return sb.toString();
-    }
-}
-```
 
 ## ⚡ 복잡도 분석
 - **시간복잡도**: O(n + m) - n, m은 각 문자열의 길이
