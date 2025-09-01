@@ -1,0 +1,16 @@
+site_name: Algorithm Pattern Notes
+site_description: 자주 까먹는 알고리즘 패턴 복습용
+site_author: yeslee
+
+theme:
+  name: readthedocs
+
+nav:
+  - Home: index.md
+  - Patterns:
+    - String: 01_string/README.md
+    - Array: 02_array/README.md
+    - HashMap: 04_hashmap/README.md
+    - Sorting: 06_sorting_searching/README.md
+    - Greedy: 09_greedy/README.md
+    - Math: 19_math/README.md

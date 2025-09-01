@@ -81,7 +81,7 @@ for (String word : words) {
 ## 📋 학습 로드맵
 
 ### 🥉 초급 (패턴 익히기)
-- [x] [숫자 문자열과 영단어](./notes/number_string_and_words.md) - 기본 매핑
+- 텍스트만 - 기본 매핑
 
 ### 🥈 중급 (최적화 & 응용)  
 - [ ] Two Sum 문제 - 해시맵으로 O(n) 최적화

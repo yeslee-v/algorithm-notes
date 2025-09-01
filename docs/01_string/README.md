@@ -79,7 +79,7 @@ for (char c : s.toCharArray()) {
 ## 📋 학습 로드맵
 
 ### 🥉 초급 (패턴 익히기)
-- [x] [1768 문자열 교대로 합치기](./notes/1768_merge_strings_alternately.md) - StringBuilder 기본
+- [1768 문자열 교대로 합치기](./notes/1768_merge_strings_alternately.md) - StringBuilder 기본
 
 ### 🥈 중급 (최적화 & 응용)  
 - [ ] 회문 판별 - 투포인터 활용
